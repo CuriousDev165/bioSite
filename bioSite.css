@@ -1,12 +1,12 @@
 /*CSS for high-level elements in the page.*/
 body{
-    background-color: rgba(000, 000, 100, 1);
+    background-color: rgba(000, 000, 60, 1);
 }
 /*CSS for elements in the page body.*/
-h1,h2,h3,p,a, figcaption{
-    font-family: "Public Sans", sans-serif;
+h1,h2,h3,p,blockquote{
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    color: rgba(160, 180, 0, 1);
+    color: rgb(0, 180, 171, 1);
 }
 h1{
     font-weight: 700px;
@@ -19,8 +19,27 @@ h3{
     font-weight: 400px;
 }
 p{
+    font-family: "Public Sans", sans-serif;
+    font-size: 16pt;
     font-weight: 100px;
     text-align: justify;
+}
+a{
+    font-family: "Public Sans", sans-serif;
+    color: rgba(0, 180, 171, 1);
+}
+blockquote{
+    font-family: "Public Sans", sans-serif;
+    font-size: 16pt;
+    font-weight: 100px;
+    font-style: italic;
+    text-align: justify;
+    padding-left: 50px;
+}
+hr{
+    height: 2px;
+    background-color: rgba(000, 100, 200, 1);
+    border: none;
 }
 img{
     display: block;
@@ -28,9 +47,11 @@ img{
     margin-right: auto;
 }
 figcaption{
+    font-family: "Public Sans", sans-serif;
     font-style: italic;
     text-align: center;
     margin-top: 10px;
+    color: rgba(0, 180, 171, 1);
 }
 /*CSS for classes.*/
 .centered-in-window{
@@ -39,12 +60,21 @@ figcaption{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.left-div{
+    float:left;
+    padding-right: 10px;
+}
 .link-list{
     text-align: center;
+    font-size: 10pt;
 }
 /*CSS for id's.*/
 #page-header, #page-sub-header{
-    font-family: "Public Sans";
+    font-family: "Calibri";
     font-weight: 700px;
     text-align: center;
+}
+.right-div{
+    float: right;
+    padding-left: 10px;
 }
